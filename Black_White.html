@@ -9,13 +9,108 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Black&amp;White.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Black&amp;White" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="F3921274-C30C-4F7F-917C-A14BF1FF8DA1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">  body, tw-story {
-background-color: #172774;
-color: #EEEEEE;
-font-family: 'PT Sans Caption', sans-serif;
-font-size: 1.1em;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="700,350" size="100,100">First Page
-[Hello]</tw-passagedata></tw-storydata>
+<tw-storydata name="Black&amp;White" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="F3921274-C30C-4F7F-917C-A14BF1FF8DA1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+body, tw-story {
+	background-image: url("https://euniceadam.github.io/dmst_twine/images/Library.png");
+	background-repeat: no-repeat;
+  background-size: cover;
+	background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'PT Sans Caption', sans-serif;
+  
+}
+
+tw-story [tags~="intro"] {
+	text-align: center;
+  padding: 280px 0;
+  overflow: hidden;
+}
+ 
+tw-link:hover {
+  color: #8B8000;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="forest" color="red"></tw-tag><tw-tag name="color" color="orange"></tw-tag><tw-tag name="intro" color="blue"></tw-tag><tw-passagedata pid="1" name="Intro" tags="intro" position="450,150" size="100,100">&lt;span style=&quot;color:black; font-size: 40px;background-color: #FFFFFF&quot;; text-align:&quot;center&quot;;&gt;
+&quot;Life is never [[black]] and [[white]].&quot;
+&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="2" name="black" tags="" position="275,250" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;
+As the stillness of the library stillness surrounds you, thoughts of Joan, the person you first heard this quote from [[resurface]]. 
+
+(text-style:&quot;blurrier&quot;)[&quot;Life is never black and white.&quot;]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="3" name="white" tags="forest" position="450,350" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;
+(set:$distracted to false)You don&#39;t have time for distractions so you go back to your assignments. 
+
+
+&lt;img src=&quot;https://euniceadam.github.io/dmst_twine/images
+/Eunice_Stills2.gif&quot;&gt;
+
+As time goes by, you can&#39;t seem to complete any work, so:
+&lt;/span&gt;
+&lt;span style=&quot;color:#BEBEBD; background-color: #000000&quot;;&gt;
+[[You go home at 11:00 P.M.-&gt;end]]
+
+[[You zone out.]]
+
+&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="4" name="resurface" tags="forest color" position="175,400" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;
+Memories of exploring the streets of Boston with Joan flood your mind, vivid and [[bittersweet]]. 
+
+&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/Eunice_Altered-Image.gif&quot; style = &quot;align:center;width:800px;height:450px;&quot;&gt;
+
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="5" name="end" tags="" position="725,225" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;You go to bed with no thoughts circulating your head. 
+
+&#39;&#39;END.&#39;&#39;
+
+Restart?
+[[Yes.-&gt;Intro]]
+No.&lt;/span&gt;</tw-passagedata><tw-passagedata pid="6" name="bittersweet" tags="" position="275,525" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;
+In Boston, your eyes were those of your film camera. 
+
+You recall [[the freedom of wandering without a plan.]]
+
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="7" name="the freedom of wandering without a plan." tags="" position="150,675" size="100,100">
+&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/BookScanCenter_6 5.jpg&quot; style = &quot;align:center;width:600px;height:480px;&quot;&gt;
+&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;Then you start thinking about [[the feeling of exploring an unknown city.]]&lt;/span&gt;
+
+
+
+
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="8" name="the feeling of exploring an unknown city." tags="" position="375,750" size="100,100">&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/BookScanCenter_5 2.jpg&quot; style = &quot;width:600px;height:397px;&quot;&gt;
+
+&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;Moments of laughter and stories shared with ease; this joy that filled your heart and now brings [[unease]].&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="9" name="You zone out." tags="" position="425,550" size="100,100">(set:$distracted to true) &lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;
+(if:$distracted is true)[You proceed to get absorbed in your distracting ][[thoughts.-&gt;black]]
+&lt;/span&gt;
+&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/Eunice_Video.gif&quot; style = &quot;width:600px;height:480px;&quot;&gt;</tw-passagedata><tw-passagedata pid="10" name="memories" tags="" position="300,900" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;Your friend is no longer by your side, and this leaves you with a pain that&#39;s [[hard to hide.]]&lt;/span&gt;
+&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/BookScanCenter_7 6.jpg&quot; style = &quot;width:600px;height:397px;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="unease" tags="" position="125,875" size="100,100">
+&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/BookScanCenter_7 3.jpg&quot; style = &quot;width:400px;height:598px;&quot;&gt;
+&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;The (either:&quot;stress&quot;, &quot;panic&quot;, &quot;nostalgia&quot;) kicks in and you spiral down even more [[memories]].&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="12" name="hard to hide." tags="" position="600,850" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;The quietness of the library amplifies the sound of your longing. 
+(text-style:&quot;blurrier&quot;)[[&quot;Life is never black and white.&quot;]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="13" name="&quot;Life is never black and white.&quot;" tags="" position="500,1000" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;&quot;Life is never black and white, you know.&quot; that was the last thing she said.
+&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/BookScanCenter_4.jpg&quot; style = &quot;width:600px;height:397px;&quot;&gt;
+You hadn&#39;t said anything then, but now you finally [[understand.]]&lt;/span&gt;
+
+
+</tw-passagedata><tw-passagedata pid="14" name="understand." tags="" position="700,1100" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;Her leaving you and your friendship fading was not black and white. 
+&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/BookScanCenter_6 2.jpg&quot; style = &quot;width:600px;height:397px;&quot;&gt;
+It was unpredictable and no explanation you made up for it would ever [[fit.]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="15" name="fit." tags="" position="775,825" size="100,100">&lt;span style=&quot;color:black;background-color: #FFFFFF&quot;;&gt;Joan was the only one who could turn your colourful, chaotic rendition of the lost friendship black and white. 
+
+//Or maybe she couldn&#39;t.//
+
+Maybe there was no reason, no purpose.
+&lt;img src = &quot;https://euniceadam.github.io/dmst_twine/images/BookScanCenter_8.jpg&quot; style = &quot;width:400px;height:400px;&quot;&gt;
+Right now, she was not here, and you were in the library...supposed to be studying...
+&lt;/span&gt;
+&lt;span style=&quot;color:red;background-color: #FFFFFF&quot;;&gt;(live:5s)[(stop:) You need get back to work...]
+(live:9s)[(stop:) [[Get back to work...-&gt;white]]]
+&lt;audio src=&quot;https://euniceadam.github.io/dmst_twine/iPhone ding - sound effect.mp3&quot; autoplay&gt;&lt;/span&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
